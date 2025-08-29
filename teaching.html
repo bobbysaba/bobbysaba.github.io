@@ -3,66 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bobby Saba - Teaching</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f4f4f4;
-        }
-        nav {
-            background-color: #333;
-            padding: 10px;
-        }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-        nav li {
-            margin: 0 15px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        nav a:hover, nav a.active {
-            background-color: #555;
-        }
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-        }
-    </style>
+    <title>Teaching - Bobby Saba</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="teaching.html" class="active">Teaching</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <div id="nav-placeholder"></div>
     <main>
-        <h1>CV</h1>
-        <p>Add your curriculum vitae content here. For example:</p>
-        <h2>Education</h2>
-        <ul>
-            <li>Degree 1 - University (Year)</li>
-            <!-- Add more -->
-        </ul>
-        <!-- Edit or add sections as needed -->
+        <h1>Teaching</h1>
+        <p>List your courses or teaching experiences here.</p>
+        <!-- Add more content as needed -->
     </main>
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+                // Highlight active link based on current page
+                const links = document.querySelectorAll('nav a');
+                links.forEach(link => {
+                    if (link.href === window.location.href) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+    </script>
 </body>
 </html>
