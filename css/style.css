@@ -8,6 +8,14 @@ header {
   text-align: center;
   padding: 20px 0;
 }
+header img {
+  display: block; /* Ensure image is visible */
+  max-width: 100%;
+  height: auto;
+  opacity: 1; /* Prevent transparency */
+  position: relative; /* Avoid z-index issues */
+  z-index: 1;
+}
 nav ul {
   list-style: none;
   padding: 0;
