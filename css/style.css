@@ -8,13 +8,12 @@ header {
   text-align: center;
   padding: 20px 0;
 }
-header img {
-  display: block; /* Ensure image is visible */
-  max-width: 100%;
+header-photo {
+  width: 100%;
+  max-width: 800px; /* Adjust this value as needed */
   height: auto;
-  opacity: 1; /* Prevent transparency */
-  position: relative; /* Avoid z-index issues */
-  z-index: 1;
+  display: block;
+  margin: 0 auto;
 }
 nav ul {
   list-style: none;
