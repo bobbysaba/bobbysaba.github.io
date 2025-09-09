@@ -27,15 +27,13 @@
             <!-- Recommended size: 1920x400px for best results -->
             <img src="{{ '/assets/images/header.jpg' | relative_url }}" alt="Header Background" class="header-image">
             <div class="header-overlay"></div>
+            <!-- Site title in top left -->
+            <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
         </div>
         
         <!-- Navigation bar with semi-transparent background -->
         <nav class="navbar">
             <div class="nav-container">
-                <!-- Site title/logo -->
-                <div class="nav-brand">
-                    <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
-                </div>
                 
                 <!-- Mobile menu toggle button -->
                 <button class="nav-toggle" aria-label="Toggle navigation">
