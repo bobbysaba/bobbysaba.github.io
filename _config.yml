@@ -1,0 +1,62 @@
+# Site settings - Customize these values for your personal website
+title: "Dr. Jane Smith" # Replace with your name
+description: "Personal Academic Website - Research, Teaching, and More" # Brief site description
+baseurl: "" # Leave empty for GitHub Pages main site, or "/repository-name" if using project pages
+url: "https://bobbysaba.github.io" # Replace with your GitHub Pages URL
+
+# Personal information - Update with your details
+author:
+  name: "Dr. Jane Smith" # Your full name
+  email: "jane.smith@university.edu" # Your email
+  bio: "Assistant Professor of Computer Science" # Short professional title
+  location: "University Name" # Your institution/location
+  
+# Social links - Add your social media handles (remove lines you don't want)
+social:
+  twitter: "yourtwitterhandle"
+  linkedin: "your-linkedin-profile"
+  github: "yourgithubusername"
+  google_scholar: "your-scholar-id"
+  orcid: "0000-0000-0000-0000"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Collections for organizing content
+collections:
+  research:
+    output: true
+    permalink: /:collection/:name/
+  teaching:
+    output: true
+    permalink: /:collection/:name/
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
+
+# Default layouts for different content types
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "research"
+    values:
+      layout: "research_item"
+  - scope:
+      path: ""
+      type: "teaching"
+    values:
+      layout: "teaching_item"

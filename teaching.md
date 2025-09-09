@@ -1,0 +1,355 @@
+---
+# Jekyll front matter
+layout: default
+title: "Teaching"
+description: "My courses, teaching philosophy, and educational resources"
+permalink: /teaching/
+---
+
+<div class="container">
+    <h1 class="page-title">Teaching</h1>
+    
+    <!-- Teaching Philosophy -->
+    <div class="hero-description text-center" style="margin-bottom: 3rem;">
+        <p>I believe that effective teaching transforms curiosity into understanding and understanding into innovation. 
+        My goal is to create engaging, inclusive learning environments where students feel empowered to explore, 
+        question, and discover the fascinating world of computer science.</p>
+    </div>
+    
+    <!-- Current Courses -->
+    <h2 class="section-title">Current Courses</h2>
+    <div class="cards-grid">
+        <div class="card">
+            <h3><i class="fas fa-robot"></i> CS 485: Introduction to Artificial Intelligence</h3>
+            <p><strong>Level:</strong> Undergraduate • <strong>Enrollment:</strong> 45 students</p>
+            <p>This course introduces fundamental concepts in AI including search algorithms, knowledge 
+            representation, machine learning basics, and ethical considerations. Students work on 
+            hands-on projects using Python and popular AI libraries.</p>
+            <div class="card-meta">
+                <strong>Prerequisites:</strong> Data Structures, Statistics<br>
+                <strong>Semester:</strong> Fall 2024 • <strong>Rating:</strong> 4.8/5.0
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3><i class="fas fa-brain"></i> CS 685: Deep Learning</h3>
+            <p><strong>Level:</strong> Graduate • <strong>Enrollment:</strong> 25 students</p>
+            <p>Advanced course covering neural network architectures, optimization techniques, and 
+            cutting-edge research in deep learning. Emphasis on both theoretical foundations and 
+            practical implementation of modern deep learning systems.</p>
+            <div class="card-meta">
+                <strong>Prerequisites:</strong> Machine Learning, Linear Algebra<br>
+                <strong>Semester:</strong> Fall 2024 • <strong>Rating:</strong> 4.9/5.0
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3><i class="fas fa-balance-scale"></i> CS 580: AI Ethics and Society</h3>
+            <p><strong>Level:</strong> Mixed (Undergrad/Grad) • <strong>Enrollment:</strong> 35 students</p>
+            <p>Interdisciplinary course examining the societal implications of AI technology. 
+            Topics include algorithmic bias, privacy, transparency, and the future of work. 
+            Features guest lectures from industry experts and ethicists.</p>
+            <div class="card-meta">
+                <strong>Prerequisites:</strong> Intro to AI or equivalent<br>
+                <strong>Semester:</strong> Spring 2024 • <strong>Rating:</strong> 4.7/5.0
+            </div>
+        </div>
+    </div>
+    
+    <!-- Teaching Philosophy in Detail -->
+    <h2 class="section-title">Teaching Philosophy</h2>
+    <div class="about-section">
+        <div class="about-item">
+            <img src="{{ '/assets/images/teaching_1.jpg' | relative_url }}" alt="Interactive classroom" class="about-image">
+            <div class="about-text">
+                <h3><i class="fas fa-users"></i> Active Learning & Engagement</h3>
+                <p>I believe that students learn best when they're actively engaged with the material. 
+                My classes feature interactive discussions, collaborative problem-solving sessions, 
+                and hands-on coding exercises. Instead of passive lectures, students participate in 
+                live coding demonstrations and peer programming activities.</p>
+                
+                <p>I use tools like interactive polling, breakout discussions, and real-time 
+                collaborative coding to ensure every student is involved in the learning process. 
+                This approach has consistently resulted in higher engagement and better learning outcomes.</p>
+            </div>
+        </div>
+        
+        <div class="about-item">
+            <img src="{{ '/assets/images/teaching_2.jpg' | relative_url }}" alt="Diverse student group" class="about-image">
+            <div class="about-text">
+                <h3><i class="fas fa-heart"></i> Inclusive & Accessible Education</h3>
+                <p>Creating an inclusive classroom environment is paramount to my teaching philosophy. 
+                I work actively to ensure that students from all backgrounds feel welcome and supported. 
+                This includes using diverse examples in coursework, providing multiple ways to engage 
+                with content, and being mindful of different learning styles.</p>
+                
+                <p>I provide comprehensive accessibility accommodations and maintain flexible policies 
+                that recognize students' diverse circumstances. My goal is to remove barriers to learning 
+                so that every student can succeed regardless of their background or challenges.</p>
+            </div>
+        </div>
+        
+        <div class="about-item">
+            <img src="{{ '/assets/images/teaching_3.jpg' | relative_url }}" alt="Project presentation" class="about-image">
+            <div class="about-text">
+                <h3><i class="fas fa-lightbulb"></i> Project-Based Learning</h3>
+                <p>I strongly believe in learning by doing. Each of my courses features substantial 
+                project components where students apply theoretical concepts to real-world problems. 
+                Students have created everything from chatbots for mental health support to 
+                bias-detection tools for hiring systems.</p>
+                
+                <p>These projects not only reinforce learning but also build portfolios that students 
+                can showcase to potential employers. Many of my students' projects have led to 
+                internship opportunities, research publications, and even startup ventures.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Course Materials and Resources -->
+    <h2 class="section-title">Educational Resources</h2>
+    <div class="cards-grid">
+        <div class="card">
+            <h3><i class="fas fa-book-open"></i> Open Educational Resources</h3>
+            <p>All my course materials are made freely available to promote accessible education:</p>
+            <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                <li>Comprehensive lecture slides with interactive elements</li>
+                <li>Video tutorials and coding walkthroughs</li>
+                <li>Practice problems with detailed solutions</li>
+                <li>Project templates and starter code</li>
+            </ul>
+            <div class="card-meta">
+                <strong>Usage:</strong> Downloaded by 50+ instructors worldwide
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3><i class="fas fa-code"></i> Interactive Learning Tools</h3>
+            <p>I've developed several custom tools to enhance the learning experience:</p>
+            <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                <li>Neural Network Visualizer - Interactive tool for understanding deep learning</li>
+                <li>Algorithm Simulator - Step-through visualizations of AI algorithms</li>
+                <li>Ethics Case Study Platform - Interactive scenarios for discussing AI ethics</li>
+            </ul>
+            <div class="card-meta">
+                <strong>Impact:</strong> Used in 100+ courses globally
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3><i class="fas fa-graduation-cap"></i> Student Success Programs</h3>
+            <p>Beyond formal courses, I run several programs to support student development:</p>
+            <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                <li>Weekly AI Research Seminar for graduate students</li>
+                <li>Undergraduate Research Opportunities Program</li>
+                <li>Industry Mentorship Connections</li>
+                <li>Graduate School Preparation Workshops</li>
+            </ul>
+            <div class="card-meta">
+                <strong>Participants:</strong> 80+ students annually
+            </div>
+        </div>
+    </div>
+    
+    <!-- Past Courses -->
+    <h2 class="section-title">Previously Taught Courses</h2>
+    <div class="about-section">
+        <div class="cv-item">
+            <h4>CS 201: Data Structures and Algorithms</h4>
+            <div class="cv-meta">Undergraduate Course • 2020-2023 • Average Rating: 4.6/5.0</div>
+            <p>Foundational course covering essential data structures (arrays, linked lists, trees, graphs) 
+            and algorithms (sorting, searching, dynamic programming). Emphasized both theoretical analysis 
+            and practical implementation skills.</p>
+            <p><strong>Innovation:</strong> Introduced gamified programming challenges that increased 
+            student engagement by 35%</p>
+        </div>
+        
+        <div class="cv-item">
+            <h4>CS 350: Software Engineering</h4>
+            <div class="cv-meta">Undergraduate Course • 2019-2022 • Average Rating: 4.5/5.0</div>
+            <p>Comprehensive course on software development methodologies, project management, 
+            testing strategies, and collaborative development using modern tools and practices.</p>
+            <p><strong>Innovation:</strong> Partnered with local nonprofits for real-world project 
+            experience, resulting in 12 deployed applications</p>
+        </div>
+        
+        <div class="cv-item">
+            <h4>CS 795: Advanced Topics in Machine Learning</h4>
+            <div class="cv-meta">Graduate Seminar • 2021-2023 • Average Rating: 4.8/5.0</div>
+            <p>Research-focused seminar covering cutting-edge topics in ML including meta-learning, 
+            few-shot learning, and neural architecture search. Students presented recent papers 
+            and conducted original research projects.</p>
+            <p><strong>Outcome:</strong> 8 student projects resulted in conference submissions, 
+            3 were accepted</p>
+        </div>
+    </div>
+    
+    <!-- Student Testimonials -->
+    <h2 class="section-title">What Students Say</h2>
+    <div class="cards-grid">
+        <div class="card">
+            <p style="font-style: italic;">"Dr. Smith's teaching style is incredibly engaging. 
+            She makes complex AI concepts accessible and always encourages questions. 
+            The hands-on projects were challenging but rewarding, and I feel much more 
+            confident in my programming abilities."</p>
+            <div class="card-meta">
+                <strong>Sarah J.</strong> • CS 485 Student • Fall 2023
+            </div>
+        </div>
+        
+        <div class="card">
+            <p style="font-style: italic;">"This was the most impactful course I've taken. 
+            The combination of technical depth and ethical considerations opened my eyes 
+            to the responsibility we have as future technologists. The diverse perspectives 
+            in class discussions were invaluable."</p>
+            <div class="card-meta">
+                <strong>Marcus L.</strong> • CS 580 Student • Spring 2024
+            </div>
+        </div>
+        
+        <div class="card">
+            <p style="font-style: italic;">"Professor Smith's mentorship extended far beyond 
+            the classroom. She helped me navigate graduate school applications and 
+            connected me with research opportunities. Her support was instrumental 
+            in my acceptance to PhD programs."</p>
+            <div class="card-meta">
+                <strong>Priya K.</strong> • Former Undergraduate • Now PhD Student at MIT
+            </div>
+        </div>
+    </div>
+    
+    <!-- Teaching Awards and Recognition -->
+    <h2 class="section-title">Teaching Awards & Recognition</h2>
+    <div class="about-section">
+        <div class="cv-item">
+            <h4><i class="fas fa-trophy"></i> Outstanding Teaching Award</h4>
+            <div class="cv-meta">University Teaching Excellence Program • 2023</div>
+            <p>Recognized for innovative teaching methods and exceptional student outcomes. 
+            Award based on peer evaluation, student feedback, and teaching portfolio review.</p>
+        </div>
+        
+        <div class="cv-item">
+            <h4><i class="fas fa-medal"></i> Best Course Innovation Award</h4>
+            <div class="cv-meta">College of Computer Science • 2022</div>
+            <p>Honored for developing the Interactive AI Ethics curriculum, which has since 
+            been adopted by 15 other universities and featured in the ACM Education Newsletter.</p>
+        </div>
+        
+        <div class="cv-item">
+            <h4><i class="fas fa-star"></i> Student Choice Award</h4>
+            <div class="cv-meta">Student Government Association • 2021, 2023</div>
+            <p>Voted by students as their favorite professor two years running. 
+            Based on anonymous student nominations and campus-wide voting.</p>
+        </div>
+    </div>
+    
+    <!-- Professional Development -->
+    <h2 class="section-title">Teaching Professional Development</h2>
+    <div class="cards-grid">
+        <div class="card">
+            <h3><i class="fas fa-chalkboard-teacher"></i> Pedagogical Training</h3>
+            <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                <li>Certificate in College Teaching (40 hours)</li>
+                <li>Inclusive Classroom Practices Workshop</li>
+                <li>Active Learning Strategies Seminar</li>
+                <li>Assessment and Grading Best Practices</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h3><i class="fas fa-users"></i> Conference Presentations</h3>
+            <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                <li>ACM SIGCSE Technical Symposium (2023, 2024)</li>
+                <li>IEEE Frontiers in Education Conference (2022)</li>
+                <li>International Conference on AI in Education (2023)</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h3><i class="fas fa-pen"></i> Educational Publications</h3>
+            <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                <li>"Gamification in CS Education" - SIGCSE 2023</li>
+                <li>"Teaching AI Ethics Effectively" - IEEE Computer 2022</li>
+                <li>"Project-Based Learning in Deep Learning Courses" - Computers & Education 2023</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Office Hours and Support -->
+    <h2 class="section-title">Student Support</h2>
+    <div class="hero-section" style="margin-top: 3rem;">
+        <div class="hero-content">
+            <h3><i class="fas fa-clock"></i> Office Hours & Availability</h3>
+            <p><strong>Regular Office Hours:</strong> Tuesdays & Thursdays, 2:00-4:00 PM<br>
+            <strong>Location:</strong> Computer Science Building, Room 314<br>
+            <strong>Online Office Hours:</strong> Fridays, 1:00-2:00 PM via Zoom</p>
+            
+            <p>I maintain an open-door policy and encourage students to reach out whenever 
+            they need assistance. Whether you're struggling with course material, considering 
+            research opportunities, or seeking career advice, I'm here to help you succeed.</p>
+            
+            <div class="cta-buttons">
+                <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i> Schedule Appointment
+                </a>
+                <a href="{{ '/assets/files/syllabus-example.pdf' | relative_url }}" class="btn btn-outline" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Sample Syllabus
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Future Course Development -->
+    <h2 class="section-title">Upcoming Courses</h2>
+    <div class="cards-grid">
+        <div class="card">
+            <h3><i class="fas fa-rocket"></i> CS 590: Responsible AI Development</h3>
+            <p><strong>Launch:</strong> Spring 2025 • <strong>Level:</strong> Graduate</p>
+            <p>New interdisciplinary course focusing on the technical and social aspects of 
+            developing AI systems responsibly. Will cover fairness-aware ML, privacy-preserving 
+            techniques, and stakeholder engagement methods.</p>
+        </div>
+        
+        <div class="card">
+            <h3><i class="fas fa-leaf"></i> CS 480: Green Computing and Sustainable AI</h3>
+            <p><strong>Launch:</strong> Fall 2025 • <strong>Level:</strong> Undergraduate</p>
+            <p>Emerging course addressing the environmental impact of computing and AI. 
+            Students will learn about energy-efficient algorithms, carbon-aware computing, 
+            and sustainable software development practices.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Additional custom styles for teaching page -->
+<style>
+/* Custom styling for lists in cards */
+.card ul {
+    text-align: left;
+}
+
+.card li {
+    margin-bottom: 0.5rem;
+}
+
+/* Testimonial styling */
+.card p[style*="italic"] {
+    border-left: 3px solid var(--secondary-color);
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Office hours section styling */
+.hero-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.hero-content p strong {
+    color: var(--primary-color);
+}
+
+/* Awards section icons */
+.cv-item h4 i {
+    color: var(--accent-color);
+    margin-right: 0.5rem;
+}
+</style>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Dr. Jane Smith</title>
+    <meta name="description" content="Welcome to my personal academic website">
+    
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Header with background image and navigation overlay -->
+    <header class="site-header">
+        <!-- Background image container -->
+        <div class="header-background">
+            <!-- Replace 'header-bg.jpg' with your header image -->
+            <!-- Recommended size: 1920x400px for best results -->
+            <img src="/assets/images/header.jpg" alt="Header Background" class="header-image">
+            <div class="header-overlay"></div>
+        </div>
+        
+        <!-- Navigation bar with semi-transparent background -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- Site title/logo -->
+                <div class="nav-brand">
+                    <a href="/">Dr. Jane Smith</a>
+                </div>
+                
+                <!-- Mobile menu toggle button -->
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <!-- Navigation menu -->
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/about/" class="nav-link ">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/research/" class="nav-link ">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/teaching/" class="nav-link ">Teaching</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/cv/" class="nav-link ">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/contact/" class="nav-link ">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main content area -->
+    <main class="main-content">
+        <!-- Hero Section with profile image and introduction -->
+<section class="hero-section">
+    <div class="hero-content">
+        <!-- Replace 'profile.jpg' with your actual headshot image -->
+        <!-- Recommended size: 500x500px for best results -->
+        <img src="/assets/images/headshot.jpg" alt="Dr. Jane Smith" class="profile-image">
+        
+        <h1 class="hero-title">Dr. Jane Smith</h1>
+        <p class="hero-subtitle">Assistant Professor of Computer Science</p>
+        <p class="hero-subtitle">University Name</p>
+        
+        <!-- Customize this introduction paragraph with your own content -->
+        <div class="hero-description">
+            <p>Welcome to my personal website! I'm passionate about cutting-edge research in computer science, 
+            with a focus on artificial intelligence and machine learning. Here you'll find information about 
+            my research projects, teaching philosophy, and academic journey.</p>
+            
+            <p>I believe in the power of technology to solve real-world problems and am dedicated to fostering 
+            the next generation of innovators through education and mentorship.</p>
+        </div>
+        
+        <!-- Call-to-action buttons linking to key sections -->
+        <div class="cta-buttons">
+            <a href="/research/" class="btn btn-primary">
+                <i class="fas fa-flask"></i> Explore My Research
+            </a>
+            <a href="/about/" class="btn btn-outline">
+                <i class="fas fa-user"></i> Learn More About Me
+            </a>
+            <a href="/contact/" class="btn btn-outline">
+                <i class="fas fa-envelope"></i> Get In Touch
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Quick highlights section -->
+<section class="container">
+    <h2 class="section-title">Recent Highlights</h2>
+    
+    <!-- Grid of highlight cards - customize with your actual achievements -->
+    <div class="cards-grid">
+        <!-- Research highlight card -->
+        <div class="card">
+            <h3><i class="fas fa-award"></i> Latest Publication</h3>
+            <p>Our recent work on "Advanced Machine Learning Techniques" has been accepted at the 
+            International Conference on AI. This research explores novel approaches to improving 
+            model interpretability.</p>
+            <div class="card-meta">
+                <i class="fas fa-calendar"></i> Published: March 2024 |
+                <i class="fas fa-users"></i> Co-authored with 3 researchers
+            </div>
+        </div>
+        
+        <!-- Teaching highlight card -->
+        <div class="card">
+            <h3><i class="fas fa-chalkboard-teacher"></i> New Course Launch</h3>
+            <p>Excited to introduce "Introduction to Deep Learning" this fall semester. 
+            This hands-on course will guide students through the fundamentals of neural networks 
+            and practical applications.</p>
+            <div class="card-meta">
+                <i class="fas fa-calendar"></i> Starting: Fall 2024 |
+                <i class="fas fa-users"></i> 30 students enrolled
+            </div>
+        </div>
+        
+        <!-- Achievement highlight card -->
+        <div class="card">
+            <h3><i class="fas fa-trophy"></i> Research Grant Awarded</h3>
+            <p>Thrilled to receive a $150,000 NSF grant to support our research on sustainable 
+            computing systems. This funding will enable groundbreaking work over the next three years.</p>
+            <div class="card-meta">
+                <i class="fas fa-calendar"></i> Awarded: January 2024 |
+                <i class="fas fa-dollar-sign"></i> $150,000 over 3 years
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- News and updates section -->
+<section class="container">
+    <h2 class="section-title">Latest News</h2>
+    
+    <!-- News items - add your actual news and updates here -->
+    <div class="about-section">
+        <div class="cv-item">
+            <h4>Speaking at Tech Conference 2024</h4>
+            <div class="cv-meta">September 2024</div>
+            <p>I'll be presenting our latest research findings at the International Technology Conference 
+            in San Francisco. Looking forward to sharing insights on the future of AI ethics.</p>
+        </div>
+        
+        <div class="cv-item">
+            <h4>New Collaboration with Industry Partner</h4>
+            <div class="cv-meta">August 2024</div>
+            <p>Excited to announce a new research collaboration with TechCorp Inc. to develop 
+            more efficient algorithms for large-scale data processing.</p>
+        </div>
+        
+        <div class="cv-item">
+            <h4>Student Achievement Recognition</h4>
+            <div class="cv-meta">July 2024</div>
+            <p>Congratulations to my graduate student Sarah Johnson for winning the Outstanding 
+            Research Award at the Graduate Student Symposium!</p>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Dr. Jane Smith</h3>
+                    <p>Assistant Professor of Computer Science</p>
+                    <p>University Name</p>
+                </div>
+                
+                <!-- Social media links -->
+                
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        
+                        
+                        <a href="https://twitter.com/yourtwitterhandle" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        
+                        
+                        <a href="https://linkedin.com/in/your-linkedin-profile" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        
+                        
+                        <a href="https://github.com/yourgithubusername" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        
+                        
+                        <a href="https://scholar.google.com/citations?user=your-scholar-id" target="_blank" aria-label="Google Scholar">
+                            <i class="fas fa-graduation-cap"></i>
+                        </a>
+                        
+                        
+                        <a href="https://orcid.org/0000-0000-0000-0000" target="_blank" aria-label="ORCID">
+                            <i class="fab fa-orcid"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dr. Jane Smith. All rights reserved.</p>
+                <p>Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for mobile navigation -->
+    <script>
+        // Mobile navigation toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.querySelector('.nav-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            navToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+                navToggle.classList.toggle('active');
+            });
+            
+            // Close mobile menu when clicking on a link
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                    navToggle.classList.remove('active');
+                });
+            });
+            
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(event) {
+                const isClickInsideNav = navToggle.contains(event.target) || navMenu.contains(event.target);
+                if (!isClickInsideNav && navMenu.classList.contains('active')) {
+                    navMenu.classList.remove('active');
+                    navToggle.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

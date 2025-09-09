@@ -1,0 +1,114 @@
+---
+# Front matter for Jekyll - customize these values
+layout: default
+title: "Home"
+description: "Welcome to my personal academic website"
+---
+
+<!-- Hero Section with profile image and introduction -->
+<section class="hero-section">
+    <div class="hero-content">
+        <!-- Replace 'profile.jpg' with your actual headshot image -->
+        <!-- Recommended size: 500x500px for best results -->
+        <img src="{{ '/assets/images/headshot.jpg' | relative_url }}" alt="{{ site.author.name }}" class="profile-image">
+        
+        <h1 class="hero-title">{{ site.author.name }}</h1>
+        <p class="hero-subtitle">{{ site.author.bio }}</p>
+        <p class="hero-subtitle">{{ site.author.location }}</p>
+        
+        <!-- Customize this introduction paragraph with your own content -->
+        <div class="hero-description">
+            <p>Welcome to my personal website! I'm passionate about cutting-edge research in computer science, 
+            with a focus on artificial intelligence and machine learning. Here you'll find information about 
+            my research projects, teaching philosophy, and academic journey.</p>
+            
+            <p>I believe in the power of technology to solve real-world problems and am dedicated to fostering 
+            the next generation of innovators through education and mentorship.</p>
+        </div>
+        
+        <!-- Call-to-action buttons linking to key sections -->
+        <div class="cta-buttons">
+            <a href="{{ '/research/' | relative_url }}" class="btn btn-primary">
+                <i class="fas fa-flask"></i> Explore My Research
+            </a>
+            <a href="{{ '/about/' | relative_url }}" class="btn btn-outline">
+                <i class="fas fa-user"></i> Learn More About Me
+            </a>
+            <a href="{{ '/contact/' | relative_url }}" class="btn btn-outline">
+                <i class="fas fa-envelope"></i> Get In Touch
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Quick highlights section -->
+<section class="container">
+    <h2 class="section-title">Recent Highlights</h2>
+    
+    <!-- Grid of highlight cards - customize with your actual achievements -->
+    <div class="cards-grid">
+        <!-- Research highlight card -->
+        <div class="card">
+            <h3><i class="fas fa-award"></i> Latest Publication</h3>
+            <p>Our recent work on "Advanced Machine Learning Techniques" has been accepted at the 
+            International Conference on AI. This research explores novel approaches to improving 
+            model interpretability.</p>
+            <div class="card-meta">
+                <i class="fas fa-calendar"></i> Published: March 2024 |
+                <i class="fas fa-users"></i> Co-authored with 3 researchers
+            </div>
+        </div>
+        
+        <!-- Teaching highlight card -->
+        <div class="card">
+            <h3><i class="fas fa-chalkboard-teacher"></i> New Course Launch</h3>
+            <p>Excited to introduce "Introduction to Deep Learning" this fall semester. 
+            This hands-on course will guide students through the fundamentals of neural networks 
+            and practical applications.</p>
+            <div class="card-meta">
+                <i class="fas fa-calendar"></i> Starting: Fall 2024 |
+                <i class="fas fa-users"></i> 30 students enrolled
+            </div>
+        </div>
+        
+        <!-- Achievement highlight card -->
+        <div class="card">
+            <h3><i class="fas fa-trophy"></i> Research Grant Awarded</h3>
+            <p>Thrilled to receive a $150,000 NSF grant to support our research on sustainable 
+            computing systems. This funding will enable groundbreaking work over the next three years.</p>
+            <div class="card-meta">
+                <i class="fas fa-calendar"></i> Awarded: January 2024 |
+                <i class="fas fa-dollar-sign"></i> $150,000 over 3 years
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- News and updates section -->
+<section class="container">
+    <h2 class="section-title">Latest News</h2>
+    
+    <!-- News items - add your actual news and updates here -->
+    <div class="about-section">
+        <div class="cv-item">
+            <h4>Speaking at Tech Conference 2024</h4>
+            <div class="cv-meta">September 2024</div>
+            <p>I'll be presenting our latest research findings at the International Technology Conference 
+            in San Francisco. Looking forward to sharing insights on the future of AI ethics.</p>
+        </div>
+        
+        <div class="cv-item">
+            <h4>New Collaboration with Industry Partner</h4>
+            <div class="cv-meta">August 2024</div>
+            <p>Excited to announce a new research collaboration with TechCorp Inc. to develop 
+            more efficient algorithms for large-scale data processing.</p>
+        </div>
+        
+        <div class="cv-item">
+            <h4>Student Achievement Recognition</h4>
+            <div class="cv-meta">July 2024</div>
+            <p>Congratulations to my graduate student Sarah Johnson for winning the Outstanding 
+            Research Award at the Graduate Student Symposium!</p>
+        </div>
+    </div>
+</section>

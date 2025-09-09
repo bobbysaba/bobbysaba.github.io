@@ -1,0 +1,409 @@
+---
+# Jekyll front matter
+layout: default
+title: "Contact Me"
+description: "Get in touch - office hours, contact information, and how to reach me"
+permalink: /contact/
+---
+
+<div class="container">
+    <h1 class="page-title">Contact Me</h1>
+    
+    <!-- Introduction -->
+    <div class="hero-description text-center" style="margin-bottom: 3rem;">
+        <p>I welcome inquiries from students, colleagues, and collaborators. Whether you're interested in 
+        research opportunities, have questions about my courses, or want to discuss potential partnerships, 
+        I'm always happy to connect.</p>
+    </div>
+    
+    <!-- Contact Information Grid -->
+    <div class="contact-grid">
+        <!-- Contact Details -->
+        <div class="contact-info">
+            <h3><i class="fas fa-address-card"></i> Contact Information</h3>
+            
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <strong>Email:</strong><br>
+                    <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a><br>
+                    <small style="color: var(--text-light);">Primary contact method - I typically respond within 24 hours</small>
+                </div>
+            </div>
+            
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                    <strong>Office Phone:</strong><br>
+                    (555) 123-4567<br>
+                    <small style="color: var(--text-light);">Available during office hours</small>
+                </div>
+            </div>
+            
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <strong>Office Location:</strong><br>
+                    Computer Science Building<br>
+                    Room 314, 3rd Floor<br>
+                    {{ site.author.location }}<br>
+                    123 University Drive<br>
+                    College Town, ST 12345
+                </div>
+            </div>
+            
+            <div class="contact-item">
+                <i class="fas fa-clock"></i>
+                <div>
+                    <strong>Office Hours:</strong><br>
+                    <strong>In-Person:</strong> Tuesdays & Thursdays, 2:00-4:00 PM<br>
+                    <strong>Virtual:</strong> Fridays, 1:00-2:00 PM<br>
+                    <strong>By Appointment:</strong> Available upon request<br>
+                    <small style="color: var(--text-light);">During academic semesters</small>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Quick Contact Form -->
+        <div class="contact-form">
+            <h3><i class="fas fa-paper-plane"></i> Send a Message</h3>
+            <p style="margin-bottom: 1.5rem; color: var(--text-light);">
+                Use this form for quick inquiries. For research collaborations or detailed discussions, 
+                email is preferred.
+            </p>
+            
+            <!-- Note: This is a static form. For a working contact form, you'll need to integrate 
+                 with a service like Formspree, Netlify Forms, or similar -->
+            <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form-fields">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Please select...</option>
+                        <option value="research">Research Inquiry</option>
+                        <option value="collaboration">Collaboration Opportunity</option>
+                        <option value="student">Student Question</option>
+                        <option value="speaking">Speaking Engagement</option>
+                        <option value="media">Media Inquiry</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="6" required 
+                              placeholder="Please provide details about your inquiry..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+                
+                <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-light);">
+                    * Required fields. Your information will be kept confidential and used only to respond to your inquiry.
+                </p>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Social Media and Professional Networks -->
+    <h2 class="section-title">Connect with Me</h2>
+    <div class="cards-grid">
+        {% if site.social.linkedin %}
+        <div class="card text-center">
+            <i class="fab fa-linkedin fa-3x" style="color: #0077B5; margin-bottom: 1rem;"></i>
+            <h3>LinkedIn</h3>
+            <p>Connect with me professionally and stay updated on my latest work and achievements.</p>
+            <a href="https://linkedin.com/in/{{ site.social.linkedin }}" target="_blank" class="btn btn-outline">
+                <i class="fab fa-linkedin"></i> View Profile
+            </a>
+        </div>
+        {% endif %}
+        
+        {% if site.social.google_scholar %}
+        <div class="card text-center">
+            <i class="fas fa-graduation-cap fa-3x" style="color: #4285F4; margin-bottom: 1rem;"></i>
+            <h3>Google Scholar</h3>
+            <p>Browse my publications, citations, and research impact metrics.</p>
+            <a href="https://scholar.google.com/citations?user={{ site.social.google_scholar }}" target="_blank" class="btn btn-outline">
+                <i class="fas fa-graduation-cap"></i> View Publications
+            </a>
+        </div>
+        {% endif %}
+        
+        {% if site.social.github %}
+        <div class="card text-center">
+            <i class="fab fa-github fa-3x" style="color: #333; margin-bottom: 1rem;"></i>
+            <h3>GitHub</h3>
+            <p>Explore my open-source projects, research code, and educational resources.</p>
+            <a href="https://github.com/{{ site.social.github }}" target="_blank" class="btn btn-outline">
+                <i class="fab fa-github"></i> View Repositories
+            </a>
+        </div>
+        {% endif %}
+        
+        {% if site.social.twitter %}
+        <div class="card text-center">
+            <i class="fab fa-twitter fa-3x" style="color: #1DA1F2; margin-bottom: 1rem;"></i>
+            <h3>Twitter</h3>
+            <p>Follow me for research updates, conference insights, and thoughts on AI ethics.</p>
+            <a href="https://twitter.com/{{ site.social.twitter }}" target="_blank" class="btn btn-outline">
+                <i class="fab fa-twitter"></i> Follow Me
+            </a>
+        </div>
+        {% endif %}
+    </div>
+    
+    <!-- Specific Contact Guidelines -->
+    <h2 class="section-title">Contact Guidelines</h2>
+    <div class="about-section">
+        <div class="cv-item">
+            <h4><i class="fas fa-student"></i> For Current Students</h4>
+            <p>If you're enrolled in one of my courses, please use the course management system for 
+            assignment-related questions. For academic advising, research opportunities, or personal 
+            concerns, feel free to visit during office hours or send an email to schedule a meeting.</p>
+            <p><strong>Office Hours:</strong> No appointment needed during regular office hours. 
+            I'm always happy to help with coursework, discuss research ideas, or provide career guidance.</p>
+        </div>
+        
+        <div class="cv-item">
+            <h4><i class="fas fa-user-graduate"></i> For Prospective Students</h4>
+            <p>If you're interested in joining my research group as a PhD or MS student, please email me 
+            with the following information:</p>
+            <ul style="margin: 1rem 0 1rem 1.5rem;">
+                <li>Your CV/resume</li>
+                <li>Transcript (unofficial is fine initially)</li>
+                <li>Brief description of your research interests</li>
+                <li>Explanation of why you'd like to work with me specifically</li>
+            </ul>
+            <p><strong>Note:</strong> I typically recruit 1-2 new PhD students per year. Applications 
+            are strongest when they demonstrate clear alignment with my research areas.</p>
+        </div>
+        
+        <div class="cv-item">
+            <h4><i class="fas fa-handshake"></i> For Research Collaborators</h4>
+            <p>I'm always interested in collaborative opportunities with fellow researchers, both 
+            academic and industry. Please email me with details about potential projects, shared 
+            research interests, and any relevant background information.</p>
+            <p><strong>Best practices for collaboration inquiries:</strong> Include your research 
+            background, specific collaboration ideas, and potential funding sources if applicable.</p>
+        </div>
+        
+        <div class="cv-item">
+            <h4><i class="fas fa-microphone"></i> For Speaking Engagements</h4>
+            <p>I'm available for keynote talks, panel discussions, and seminars at academic conferences, 
+            industry events, and educational institutions. Please provide details about:</p>
+            <ul style="margin: 1rem 0 1rem 1.5rem;">
+                <li>Event type, date, and location</li>
+                <li>Expected audience and attendance</li>
+                <li>Preferred topics or themes</li>
+                <li>Timeline and logistics</li>
+            </ul>
+            <p><strong>Lead time:</strong> Please contact me at least 6-8 weeks in advance for 
+            domestic events, 3-4 months for international engagements.</p>
+        </div>
+        
+        <div class="cv-item">
+            <h4><i class="fas fa-newspaper"></i> For Media Inquiries</h4>
+            <p>I'm available for interviews and expert commentary on topics related to artificial 
+            intelligence, machine learning, AI ethics, and sustainable computing. Please specify:</p>
+            <ul style="margin: 1rem 0 1rem 1.5rem;">
+                <li>Publication/media outlet</li>
+                <li>Story topic and angle</li>
+                <li>Deadline requirements</li>
+                <li>Interview format (phone, email, video)</li>
+            </ul>
+            <p><strong>Response time:</strong> I aim to respond to media inquiries within 4-6 hours 
+            during business days.</p>
+        </div>
+    </div>
+    
+    <!-- Location and Directions -->
+    <h2 class="section-title">Visit My Office</h2>
+    <div class="contact-grid" style="margin-top: 2rem;">
+        <div>
+            <h3><i class="fas fa-map"></i> Directions</h3>
+            <p><strong>From Main Campus:</strong></p>
+            <ul style="margin: 1rem 0 1rem 1.5rem;">
+                <li>Enter the Computer Science Building through the main entrance</li>
+                <li>Take the elevator or stairs to the 3rd floor</li>
+                <li>Turn right and walk to the end of the hall</li>
+                <li>Room 314 is on your left</li>
+            </ul>
+            
+            <p><strong>Parking:</strong> Visitor parking is available in Lot C (5-minute walk) or 
+            street parking on University Drive (meters required).</p>
+            
+            <p><strong>Public Transportation:</strong> Campus Bus Route 3 stops directly in front 
+            of the Computer Science Building. City buses 12 and 15 stop at University & Main.</p>
+        </div>
+        
+        <div>
+            <h3><i class="fas fa-info-circle"></i> Building Information</h3>
+            <p><strong>Building Hours:</strong><br>
+            Monday-Friday: 6:00 AM - 10:00 PM<br>
+            Saturday-Sunday: 8:00 AM - 6:00 PM</p>
+            
+            <p><strong>Security:</strong> Building requires card access after 6 PM on weekdays 
+            and all day on weekends. Please arrange meetings during regular hours or contact 
+            me in advance for access.</p>
+            
+            <p><strong>Accessibility:</strong> The building is fully ADA compliant with elevator 
+            access, accessible restrooms, and reserved parking spaces.</p>
+            
+            <p><strong>Nearby Amenities:</strong> Coffee shop (ground floor), student center 
+            (2 blocks), library (adjacent building)</p>
+        </div>
+    </div>
+    
+    <!-- Emergency Contact -->
+    <div class="hero-section" style="margin-top: 3rem; background-color: var(--background-alt);">
+        <div class="hero-content">
+            <h3><i class="fas fa-clock"></i> Response Times</h3>
+            <p>I strive to respond to all inquiries promptly:</p>
+            <ul style="text-align: left; max-width: 600px; margin: 1rem auto;">
+                <li><strong>Student emails:</strong> Within 24 hours during academic terms</li>
+                <li><strong>Research inquiries:</strong> Within 2-3 business days</li>
+                <li><strong>Media requests:</strong> Within 4-6 hours during business days</li>
+                <li><strong>Speaking engagements:</strong> Within 1 week</li>
+            </ul>
+            <p>For urgent matters requiring immediate attention, please call my office phone 
+            during business hours or contact the department office at (555) 123-4500.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Custom styles for contact page -->
+<style>
+/* Contact form styling */
+.contact-form-fields {
+    background: var(--background-alt);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Contact item styling */
+.contact-item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.contact-item:last-child {
+    border-bottom: none;
+}
+
+.contact-item i {
+    font-size: 1.2rem;
+    width: 24px;
+    flex-shrink: 0;
+}
+
+.contact-item div {
+    flex: 1;
+}
+
+.contact-item strong {
+    color: var(--primary-color);
+}
+
+.contact-item a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+/* Social media cards */
+.cards-grid .card.text-center {
+    padding: 2rem;
+}
+
+.cards-grid .card i.fa-3x {
+    margin-bottom: 1rem;
+}
+
+/* Guidelines section */
+.cv-item h4 i {
+    color: var(--secondary-color);
+    margin-right: 0.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-form-fields {
+        padding: 1.5rem;
+    }
+    
+    .contact-item {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .contact-item i {
+        align-self: flex-start;
+    }
+}
+
+/* Form submission styling */
+button[type="submit"] {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+</style>

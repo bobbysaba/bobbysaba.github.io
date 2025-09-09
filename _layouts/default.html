@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
+</head>
+<body>
+    <!-- Header with background image and navigation overlay -->
+    <header class="site-header">
+        <!-- Background image container -->
+        <div class="header-background">
+            <!-- Replace 'header-bg.jpg' with your header image -->
+            <!-- Recommended size: 1920x400px for best results -->
+            <img src="{{ '/assets/images/header.jpg' | relative_url }}" alt="Header Background" class="header-image">
+            <div class="header-overlay"></div>
+        </div>
+        
+        <!-- Navigation bar with semi-transparent background -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- Site title/logo -->
+                <div class="nav-brand">
+                    <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+                </div>
+                
+                <!-- Mobile menu toggle button -->
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <!-- Navigation menu -->
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ '/about/' | relative_url }}" class="nav-link {% if page.url == '/about/' %}active{% endif %}">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ '/research/' | relative_url }}" class="nav-link {% if page.url contains '/research' %}active{% endif %}">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ '/teaching/' | relative_url }}" class="nav-link {% if page.url contains '/teaching' %}active{% endif %}">Teaching</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ '/cv/' | relative_url }}" class="nav-link {% if page.url == '/cv/' %}active{% endif %}">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ '/contact/' | relative_url }}" class="nav-link {% if page.url == '/contact/' %}active{% endif %}">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main content area -->
+    <main class="main-content">
+        {{ content }}
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>{{ site.author.name }}</h3>
+                    <p>{{ site.author.bio }}</p>
+                    <p>{{ site.author.location }}</p>
+                </div>
+                
+                <!-- Social media links -->
+                {% if site.social %}
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        {% if site.social.email %}
+                        <a href="mailto:{{ site.author.email }}" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        {% endif %}
+                        {% if site.social.twitter %}
+                        <a href="https://twitter.com/{{ site.social.twitter }}" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        {% endif %}
+                        {% if site.social.linkedin %}
+                        <a href="https://linkedin.com/in/{{ site.social.linkedin }}" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        {% endif %}
+                        {% if site.social.github %}
+                        <a href="https://github.com/{{ site.social.github }}" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        {% endif %}
+                        {% if site.social.google_scholar %}
+                        <a href="https://scholar.google.com/citations?user={{ site.social.google_scholar }}" target="_blank" aria-label="Google Scholar">
+                            <i class="fas fa-graduation-cap"></i>
+                        </a>
+                        {% endif %}
+                        {% if site.social.orcid %}
+                        <a href="https://orcid.org/{{ site.social.orcid }}" target="_blank" aria-label="ORCID">
+                            <i class="fab fa-orcid"></i>
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}. All rights reserved.</p>
+                <p>Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for mobile navigation -->
+    <script>
+        // Mobile navigation toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.querySelector('.nav-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            navToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+                navToggle.classList.toggle('active');
+            });
+            
+            // Close mobile menu when clicking on a link
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                    navToggle.classList.remove('active');
+                });
+            });
+            
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(event) {
+                const isClickInsideNav = navToggle.contains(event.target) || navMenu.contains(event.target);
+                if (!isClickInsideNav && navMenu.classList.contains('active')) {
+                    navMenu.classList.remove('active');
+                    navToggle.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
