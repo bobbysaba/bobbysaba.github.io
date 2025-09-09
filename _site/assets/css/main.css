@@ -532,6 +532,15 @@ body {
     text-decoration: none;
 }
 
+.image-caption {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-style: italic;
+    text-align: center;
+    margin: 0.15rem 0 1rem 0;
+    border-top: 1px solid var(--border-color);
+}
+
 /* ============================================
    RESPONSIVE DESIGN
    ============================================ */
@@ -607,6 +616,12 @@ body {
         width: 100%;
         max-width: 300px;
     }
+
+    .about-image-container {
+    flex: 0 0 300px;
+    display: flex;
+    flex-direction: column;
+}
     
     .contact-grid {
         grid-template-columns: 1fr;
