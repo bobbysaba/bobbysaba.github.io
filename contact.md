@@ -74,7 +74,7 @@ permalink: /contact/
             
             <!-- Note: This is a static form. For a working contact form, you'll need to integrate 
                  with a service like Formspree, Netlify Forms, or similar -->
-            <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form-fields">
+            <form action="https://formspree.io/f/xandvjvr" method="POST" class="contact-form-fields">
                 <div class="form-group">
                     <label for="name">Name *</label>
                     <input type="text" id="name" name="name" required>
@@ -92,8 +92,8 @@ permalink: /contact/
                         <option value="research">Research Inquiry</option>
                         <option value="collaboration">Collaboration Opportunity</option>
                         <option value="student">Student Question</option>
-                        <option value="speaking">Speaking Engagement</option>
-                        <option value="media">Media Inquiry</option>
+                        <!-- <option value="speaking">Speaking Engagement</option>
+                        <option value="media">Media Inquiry</option> -->
                         <option value="other">Other</option>
                     </select>
                 </div>
@@ -163,7 +163,7 @@ permalink: /contact/
         {% endif %}
     </div>
     
-    <!-- Specific Contact Guidelines -->
+    <!-- Specific Contact Guidelines
     <h2 class="section-title">Contact Guidelines</h2>
     <div class="about-section">
         <div class="cv-item">
@@ -225,9 +225,9 @@ permalink: /contact/
             <p><strong>Response time:</strong> I aim to respond to media inquiries within 4-6 hours 
             during business days.</p>
         </div>
-    </div>
+    </div> -->
     
-    <!-- Location and Directions -->
+    <!-- Location and Directions
     <h2 class="section-title">Visit My Office</h2>
     <div class="contact-grid" style="margin-top: 2rem;">
         <div>
@@ -263,9 +263,9 @@ permalink: /contact/
             <p><strong>Nearby Amenities:</strong> Coffee shop (ground floor), student center 
             (2 blocks), library (adjacent building)</p>
         </div>
-    </div>
+    </div> -->
     
-    <!-- Emergency Contact -->
+    <!-- Emergency Contact
     <div class="hero-section" style="margin-top: 3rem; background-color: var(--background-alt);">
         <div class="hero-content">
             <h3><i class="fas fa-clock"></i> Response Times</h3>
@@ -279,7 +279,7 @@ permalink: /contact/
             <p>For urgent matters requiring immediate attention, please call my office phone 
             during business hours or contact the department office at (555) 123-4500.</p>
         </div>
-    </div>
+    </div> -->
 </div>
 
 <!-- Custom styles for contact page -->
