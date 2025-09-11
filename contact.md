@@ -2,7 +2,7 @@
 # Jekyll front matter
 layout: default
 title: "Contact Me"
-description: "Get in touch - office hours, contact information, and how to reach me"
+description: "Contact Me | Bobby Saba"
 permalink: /contact/
 ---
 
@@ -31,28 +31,28 @@ permalink: /contact/
                 </div>
             </div>
             
-            <div class="contact-item">
+            <!-- <div class="contact-item">
                 <i class="fas fa-phone"></i>
                 <div>
                     <strong>Office Phone:</strong><br>
                     (555) 123-4567<br>
                     <small style="color: var(--text-light);">Available during office hours</small>
                 </div>
-            </div>
+            </div> -->
             
             <div class="contact-item">
                 <i class="fas fa-map-marker-alt"></i>
                 <div>
                     <strong>Office Location:</strong><br>
-                    Computer Science Building<br>
-                    Room 314, 3rd Floor<br>
+                    National Weather Center<br>
+                    Room 4650, 4th Floor<br>
                     {{ site.author.location }}<br>
-                    123 University Drive<br>
-                    College Town, ST 12345
+                    120 David L Boren Blvd<br>
+                    Norman, OK 73072
                 </div>
             </div>
             
-            <div class="contact-item">
+            <!-- <div class="contact-item">
                 <i class="fas fa-clock"></i>
                 <div>
                     <strong>Office Hours:</strong><br>
@@ -61,15 +61,14 @@ permalink: /contact/
                     <strong>By Appointment:</strong> Available upon request<br>
                     <small style="color: var(--text-light);">During academic semesters</small>
                 </div>
-            </div>
+            </div> -->
         </div>
         
         <!-- Quick Contact Form -->
         <div class="contact-form">
             <h3><i class="fas fa-paper-plane"></i> Send a Message</h3>
             <p style="margin-bottom: 1.5rem; color: var(--text-light);">
-                Use this form for quick inquiries. For research collaborations or detailed discussions, 
-                email is preferred.
+                
             </p>
             
             <!-- Note: This is a static form. For a working contact form, you'll need to integrate 
@@ -101,7 +100,7 @@ permalink: /contact/
                 <div class="form-group">
                     <label for="message">Message *</label>
                     <textarea id="message" name="message" rows="6" required 
-                              placeholder="Please provide details about your inquiry..."></textarea>
+                              placeholder="Your message here..."></textarea>
                 </div>
                 
                 <button type="submit" class="btn btn-primary">
