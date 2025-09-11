@@ -11,9 +11,7 @@ permalink: /contact/
     
     <!-- Introduction -->
     <div class="hero-description text-center" style="margin-bottom: 3rem;">
-        <p>I welcome inquiries from students, colleagues, and collaborators. Whether you're interested in 
-        research opportunities, have questions about my courses, or want to discuss potential partnerships, 
-        I'm always happy to connect.</p>
+        <p></p>
     </div>
     
     <!-- Contact Information Grid -->
