@@ -2,7 +2,7 @@
 # Jekyll front matter
 layout: default
 title: "Research"
-description: "Explore my research projects, publications, and contributions to the field"
+description: "Explore my research projects, publications, and contributions to severe weather and atmospheric sciences"
 permalink: /research/
 ---
 
@@ -11,51 +11,41 @@ permalink: /research/
     
     <!-- Research Overview -->
     <div class="hero-description text-center" style="margin-bottom: 3rem;">
-        <p>My research spans multiple areas of computer science with a focus on developing intelligent systems 
-        that are both powerful and responsible. I'm particularly interested in the intersection of machine learning, 
-        ethics, and sustainability.</p>
+        <p>My research focuses on severe weather phenomena, particularly supercell thunderstorms, tornado genesis, and storm-scale processes in the U.S. I integrate high-resolution simulations with novel observational techniques, such as Doppler wind lidar, to advance understanding of tornadic convection and improve forecasting capabilities.</p>
     </div>
     
     <!-- Research Areas -->
     <h2 class="section-title">Research Areas</h2>
     <div class="cards-grid">
         <div class="card">
-            <h3><i class="fas fa-brain"></i> Explainable Artificial Intelligence</h3>
-            <p>Developing methods to make AI decision-making processes transparent and interpretable. 
-            This work is crucial for high-stakes applications like healthcare and autonomous systems 
-            where understanding the "why" behind AI decisions is as important as accuracy.</p>
+            <h3><i class="fas fa-cloud-sun-rain"></i> Supercell Dynamics and Environments</h3>
+            <p>Investigating the environmental factors influencing right-moving supercells, including inflow layer characteristics and wind shear effects, using composite observations from Doppler wind lidar and field campaigns.</p>
             <div class="card-meta">
-                <strong>Key Publications:</strong> 8 papers • <strong>Funding:</strong> $200K NSF Grant
+                <strong>Key Contributions:</strong> NSF/VORTEX-funded field observations • <strong>Collaborations:</strong> NSSL/NOAA
             </div>
         </div>
         
         <div class="card">
-            <h3><i class="fas fa-leaf"></i> Sustainable Computing</h3>
-            <p>Researching energy-efficient algorithms and green computing practices to reduce the 
-            environmental impact of AI systems. Our recent work on neural network pruning techniques 
-            has shown promising results in reducing computational costs while maintaining performance.</p>
+            <h3><i class="fas fa-eye"></i> Remote Sensing and Observations</h3>
+            <p>Developing and applying mobile Doppler wind lidar strategies to collect real-time data on supercell and QLCS environments, enabling novel insights into tornado formation and storm evolution.</p>
             <div class="card-meta">
-                <strong>Key Publications:</strong> 5 papers • <strong>Impact:</strong> 40% energy reduction
+                <strong>Key Tools:</strong> NSSL Mobile Lidar • <strong>Impact:</strong> Real-time data ingestion frameworks
             </div>
         </div>
         
         <div class="card">
-            <h3><i class="fas fa-users"></i> Human-AI Collaboration</h3>
-            <p>Investigating how humans and AI systems can work together most effectively. 
-            This includes studying trust in AI systems, designing intuitive interfaces, and 
-            developing frameworks for productive human-machine partnerships.</p>
+            <h3><i class="fas fa-laptop-code"></i> High-Resolution Storm Simulations</h3>
+            <p>Utilizing numerical models like CM1 to examine tornadic convection processes in Southeast U.S. environments, focusing on storm-scale interactions and backing wind effects on supercell evolution.</p>
             <div class="card-meta">
-                <strong>Key Publications:</strong> 12 papers • <strong>Collaborators:</strong> 6 institutions
+                <strong>Key Simulations:</strong> Dissertation research • <strong>Funding:</strong> NSF Grants
             </div>
         </div>
         
         <div class="card">
-            <h3><i class="fas fa-shield-alt"></i> AI Ethics & Fairness</h3>
-            <p>Addressing bias, fairness, and ethical considerations in machine learning systems. 
-            Our work focuses on developing algorithmic solutions to ensure equitable outcomes 
-            across diverse populations and use cases.</p>
+            <h3><i class="fas fa-chart-line"></i> Tornado Intensity Classification</h3>
+            <p>Analyzing historical and modern tornado rating systems, including verification of NWS damage paths, to propose improvements for more accurate intensity assessments.</p>
             <div class="card-meta">
-                <strong>Key Publications:</strong> 6 papers • <strong>Citations:</strong> 1,200+
+                <strong>Key Outputs:</strong> Capstone and conference presentations • <strong>Awards:</strong> 1st Place Undergraduate Oral
             </div>
         </div>
     </div>
@@ -65,30 +55,24 @@ permalink: /research/
     
     <div class="about-section">
         <div class="cv-item">
-            <h4><i class="fas fa-project-diagram"></i> EcoAI: Energy-Efficient Deep Learning</h4>
-            <div class="cv-meta">NSF Grant • 2024-2027 • $150,000</div>
-            <p>This project aims to develop novel neural network architectures that maintain high performance 
-            while drastically reducing energy consumption. We're exploring dynamic network pruning, 
-            knowledge distillation, and hardware-software co-design approaches.</p>
-            <p><strong>Team:</strong> 2 PhD students, 3 MS students, 1 postdoc</p>
+            <h4><i class="fas fa-project-diagram"></i> Examining Tornadic Convection in Southeast U.S. Environments</h4>
+            <div class="cv-meta">PhD Dissertation • Expected 2028 • NSF-Funded</div>
+            <p>This project uses high-resolution simulations to analyze storm-scale processes in tornadic convection, focusing on environmental influences in the Southeast U.S. Collaborative work with NSSL scientists integrates modeling with field observations.</p>
+            <p><strong>Team:</strong> OU/NSSL/NOAA collaborators</p>
         </div>
         
         <div class="cv-item">
-            <h4><i class="fas fa-microscope"></i> TrustML: Building Interpretable Healthcare AI</h4>
-            <div class="cv-meta">Industry Partnership • 2023-2025 • $75,000</div>
-            <p>In collaboration with Regional Medical Center, we're developing explainable AI tools 
-            for medical diagnosis. The system not only provides predictions but also explanations 
-            that doctors can understand and trust.</p>
-            <p><strong>Partners:</strong> Regional Medical Center, DataHealth Inc.</p>
+            <h4><i class="fas fa-microscope"></i> Doppler Wind Lidar Observations of Supercell Environments</h4>
+            <div class="cv-meta">MS Thesis • Completed Nov 2024 • VORTEX-SE Field Campaign</div>
+            <p>Exploring right-moving supercell environments through novel lidar observations. Includes designing scanning strategies and briefing field teams on weather conditions to support operational decisions.</p>
+            <p><strong>Partners:</strong> NSSL, Cooperative Institute for Severe Weather</p>
         </div>
         
         <div class="cv-item">
-            <h4><i class="fas fa-balance-scale"></i> FairLearn: Bias Detection and Mitigation</h4>
-            <div class="cv-meta">University Internal Grant • 2023-2024 • $25,000</div>
-            <p>Developing automated tools to detect and mitigate bias in machine learning pipelines. 
-            Our approach combines statistical methods with causal inference to ensure fair outcomes 
-            across different demographic groups.</p>
-            <p><strong>Applications:</strong> Hiring systems, loan approval, criminal justice</p>
+            <h4><i class="fas fa-database"></i> NSSL Real-Time Data Ingestion and Situational Awareness</h4>
+            <div class="cv-meta">Ongoing • 2023-Present • Python/Crontab Development</div>
+            <p>Building frameworks for ingesting and quality-controlling lidar, surface, and radiosonde data in real-time. Utilizes MQTT and SFTP to overcome IP challenges and disseminate data to forecasters for public safety.</p>
+            <p><strong>Applications:</strong> Field campaigns, high-stakes operations</p>
         </div>
     </div>
     
@@ -96,57 +80,27 @@ permalink: /research/
     <h2 class="section-title">Selected Publications</h2>
     
     <div class="about-section">
-        <!-- Publication entries - customize with your actual publications -->
+        <!-- Publication entries based on CV -->
         <div class="cv-item">
-            <h4>Energy-Efficient Neural Networks via Dynamic Pruning</h4>
+            <h4>Examining Right-Moving Supercell Environments in the Great Plains with Composite Doppler Wind Lidar Observations</h4>
             <div class="cv-meta">
-                <strong>Authors:</strong> J. Smith, A. Johnson, M. Lee<br>
-                <strong>Venue:</strong> International Conference on Machine Learning (ICML) 2024<br>
-                <strong>Status:</strong> <span class="highlight">Best Paper Award</span>
+                <strong>Authors:</strong> R.A. Saba, M.C. Coniglio, J.G. Gebauer, T.M. Bell, E.N. Smith, S. Waugh<br>
+                <strong>Venue:</strong> Monthly Weather Review (Submitted, in review)<br>
+                <strong>Status:</strong> <span class="highlight">Under Review</span>
             </div>
-            <p>We propose a novel dynamic pruning technique that reduces neural network energy consumption 
-            by 40% while maintaining 99% of original accuracy. The method adapts the network structure 
-            during inference based on input complexity.</p>
-            <p><strong>Impact:</strong> 127 citations • Featured in MIT Technology Review</p>
+            <p>This study composites lidar observations to reveal key environmental features supporting right-moving supercells in the Great Plains, advancing understanding of inflow dynamics.</p>
+            <p><strong>Impact:</strong> Supports VORTEX-SE field efforts</p>
         </div>
         
         <div class="cv-item">
-            <h4>Explainable AI in Healthcare: A Comprehensive Survey</h4>
+            <h4>The Effects of Backing Wind and Effective Inflow Layer Depth on Supercell Evolution</h4>
             <div class="cv-meta">
-                <strong>Authors:</strong> J. Smith, R. Patel, S. Chen, K. Williams<br>
-                <strong>Venue:</strong> Nature Machine Intelligence 2023<br>
-                <strong>Type:</strong> Survey Paper
-            </div>
-            <p>This comprehensive survey analyzes 200+ papers on explainable AI in healthcare, 
-            identifying key challenges and future research directions. We provide a taxonomy 
-            of explanation methods and evaluate their effectiveness in clinical settings.</p>
-            <p><strong>Impact:</strong> 89 citations • Downloaded 2,500+ times</p>
-        </div>
-        
-        <div class="cv-item">
-            <h4>Human-AI Trust: Factors Affecting Acceptance in Autonomous Systems</h4>
-            <div class="cv-meta">
-                <strong>Authors:</strong> M. Rodriguez, J. Smith, L. Thompson<br>
-                <strong>Venue:</strong> ACM Transactions on Computer-Human Interaction 2023<br>
+                <strong>Authors:</strong> R.A. Saba, M.A. Satrio, T.J. Pardun, M.D. Flournoy, M.C. Coniglio, J.C. Snyder<br>
+                <strong>Venue:</strong> In progress<br>
                 <strong>Type:</strong> Journal Article
             </div>
-            <p>Through a series of user studies with 500+ participants, we identified key factors 
-            that influence human trust in autonomous AI systems. Our findings inform the design 
-            of more trustworthy AI interfaces.</p>
-            <p><strong>Impact:</strong> 156 citations • Policy implications for autonomous vehicles</p>
-        </div>
-        
-        <div class="cv-item">
-            <h4>Fairness-Aware Machine Learning: Algorithms and Applications</h4>
-            <div class="cv-meta">
-                <strong>Authors:</strong> J. Smith, D. Kumar, A. Singh<br>
-                <strong>Venue:</strong> AAAI Conference on Artificial Intelligence 2022<br>
-                <strong>Type:</strong> Conference Paper
-            </div>
-            <p>We introduce a framework for incorporating fairness constraints into machine learning 
-            algorithms without significantly compromising performance. The approach is validated 
-            on real-world datasets from hiring and lending domains.</p>
-            <p><strong>Impact:</strong> 203 citations • Implemented in 3 industry systems</p>
+            <p>Analyzes how backing winds and inflow depth influence supercell and tornado-like vortices using CM1 simulations, with implications for Southeast U.S. forecasting.</p>
+            <p><strong>Impact:</strong> Builds on dissertation research</p>
         </div>
     </div>
     
@@ -155,8 +109,8 @@ permalink: /research/
     <div class="cards-grid">
         <div class="card">
             <h3><i class="fab fa-github"></i> Open Source Projects</h3>
-            <p>EcoML Toolkit - A Python library for energy-efficient machine learning with 500+ GitHub stars</p>
-            <p>ExplainAI Framework - Tools for generating explanations for deep learning models</p>
+            <p>NSSL Lidar Data Ingestion Framework - Python-based real-time QC and dissemination tool for field observations</p>
+            <p>Real-Time Situational Awareness Visualizer - MQTT-enabled dashboard for storm data</p>
             <div class="card-meta">
                 <a href="https://github.com/yourusername" target="_blank" class="btn btn-outline btn-sm">
                     <i class="fab fa-github"></i> View on GitHub
@@ -166,19 +120,19 @@ permalink: /research/
         
         <div class="card">
             <h3><i class="fas fa-database"></i> Datasets</h3>
-            <p>FairHire Dataset - Anonymized hiring data for bias detection research (10K records)</p>
-            <p>EnergyML Benchmark - Standardized benchmark for evaluating energy-efficient ML models</p>
+            <p>VORTEX-SE Lidar Composites - Field observations from supercell environments (ongoing collection)</p>
+            <p>Tornado Damage Path Verifications - NWS-integrated dataset for intensity classification</p>
             <div class="card-meta">
-                Available for research use under CC BY-NC 4.0 license
+                Available for research use under NOAA guidelines
             </div>
         </div>
         
         <div class="card">
             <h3><i class="fas fa-graduation-cap"></i> Educational Materials</h3>
-            <p>Interactive tutorials on explainable AI concepts</p>
-            <p>Lecture slides and assignments for sustainable computing courses</p>
+            <p>Interactive tutorials on lidar scanning strategies</p>
+            <p>Field briefing templates for severe weather operations</p>
             <div class="card-meta">
-                Used by 20+ universities worldwide
+                Used in OU Meteorology courses and NSSL training
             </div>
         </div>
     </div>
@@ -187,9 +141,7 @@ permalink: /research/
     <div class="hero-section" style="margin-top: 3rem;">
         <div class="hero-content">
             <h2>Interested in Collaboration?</h2>
-            <p>I'm always looking for opportunities to collaborate with fellow researchers, industry partners, 
-            and students who share similar interests. Whether you're interested in joint research projects, 
-            visiting our lab, or exploring funding opportunities, I'd love to hear from you.</p>
+            <p>I'm always looking for opportunities to collaborate with fellow researchers, NOAA partners, and students on severe weather projects. Whether you're interested in field campaigns, simulations, or funding opportunities like VORTEX, I'd love to hear from you.</p>
             <div class="cta-buttons">
                 <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary">
                     <i class="fas fa-envelope"></i> Contact Me
